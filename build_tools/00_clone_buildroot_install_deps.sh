@@ -16,6 +16,7 @@ sudo apt-get install build-essential libgl1-mesa-dev -y
 sudo apt-get install build-essential -y
 sudo apt-get install qtcreator -y 
 sudo apt-get install qt5-default -y 
+sudo apt-get install texinfo -y
 echo Unpack the buildroot-2020.11 tar.gz archive 
 tar -xvzf buildroot-2020.11.tar.gz
 echo Remove the archive file
