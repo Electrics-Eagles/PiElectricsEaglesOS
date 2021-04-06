@@ -17,7 +17,7 @@ sudo apt-get install build-essential -y
 sudo apt-get install qtcreator -y 
 sudo apt-get install qt5-default -y 
 echo Unpack the buildroot-2020.11 tar.gz archive 
-tar xvjf buildroot-2020.11.tar.gz
+tar -xvzf buildroot-2020.11.tar.gz
 echo Remove the archive file
 rm -rf buildroot-2020.11.tar.gz
 echo move to folder
