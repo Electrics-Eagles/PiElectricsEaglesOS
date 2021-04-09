@@ -12,14 +12,11 @@ if [ "$EUID" -ne 0 ]
   then echo "Fatal error (code : NRR) ( run as root please)"
   exit
 fi
-
-modprobe bcm2835
+echo Loading crucal modules
+modprobe i2c-bcm2835
 modbrode i2c-dev
-modprobe spi
+#modprobe spi
 
-modprobe bcm2835
-modbrode i2c-bcm2835
-modprobe spi-bcm2835
 
 clear
 echo Loading init script..........
