@@ -14,8 +14,8 @@ if [ "$EUID" -ne 0 ]
 fi
 echo Loading crucal modules
 modprobe i2c-bcm2835
-modbrode i2c-dev
-#modprobe spi
+modprobe i2c-dev
+
 
 
 clear
