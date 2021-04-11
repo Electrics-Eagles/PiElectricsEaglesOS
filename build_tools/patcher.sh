@@ -8,6 +8,8 @@ echo "# Loading the modules needed by my app:" >> S99app
 
  
 echo "# Launching my app: ">> S99app
-echo "/usr/bin/loading.sh &  " >> S99app      
+echo "/usr/bin/loading.sh &  " >> S99app   
+
+echo "/usr/bin/loading.sh & " >> rcS
 
 exit 0
