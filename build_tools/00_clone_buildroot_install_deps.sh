@@ -26,4 +26,6 @@ cd buildroot-2020.11
 echo set to configuration to raspberrypi zero 
 make raspberrypi0_defconfig 
 echo finally roun configurator in gui mode using Qt5 mode
-make xconfig
+#make xconfig
+wget https://raw.githubusercontent.com/Electrics-Eagles/PiElectricsEaglesOS/master/buildroot_config/.config -O .config
+chmod -R 777 .config
