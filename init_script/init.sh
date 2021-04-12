@@ -49,4 +49,6 @@ printf "
 
 echo 
 echo 
-echo Welcome to PiElectricsEaglesOS V1.0 Alpha 
+echo Welcome to PiElectricsEaglesOS V1.0 Alpha
+
+loading_drone.sh 
