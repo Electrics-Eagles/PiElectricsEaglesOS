@@ -19,15 +19,6 @@
       "rating": "2/10",
       "date": "12/04/2021",
       "timestamp": "21:16"
-   },
-   {
-      "id": "ec5093",
-      "link": "https://github.com/Electrics-Eagles/PiElectricsEaglesOS/releases/download/v1-12.04.2021/PiElectricsEaglesOS_12_04_2021.img",
-      "changelog": "Added all requred",
-      "packages": "https://github.com/Electrics-Eagles/PiElectricsEaglesOS/releases/download/v1-12.04.2021/PiElectricsEaglesOS_12_04_2021.html",
-      "status": "testing",
-      "rating": "2/10",
-      "date": "12/04/2021",
-      "timestamp": "21:16"
    }
+
 ]
