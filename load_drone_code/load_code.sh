@@ -1,4 +1,3 @@
-
 # Electrics-Eagles team 2021 for PiElectricsEagles 
 #
 #
@@ -9,7 +8,7 @@
 #/bin/sh
 
 sudo chmod -R 777 /dev/ttyAMA0
-sudo chmod -R 777 pielectricseagles
+sudo chmod -R 777 /usr/bin/pielectricseagles # bugix 14.04.2021
 
 FILE=/etc/pielectricseagles/config.ini
 if test -f "$FILE"; then
