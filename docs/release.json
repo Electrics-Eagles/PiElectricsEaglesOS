@@ -1,4 +1,15 @@
 [
+     {
+      "id": "fd5642",
+      "link": "https://github.com/Electrics-Eagles/PiElectricsEaglesOS/releases/download/v1.0-15.04.2021/PiElectricsEaglesOS_15_04_2021.img",
+      "changelog": "https://github.com/Electrics-Eagles/PiElectricsEaglesOS/releases/download/v1.0-15.04.2021/changelog.chg",
+      "packages": "https://github.com/Electrics-Eagles/PiElectricsEaglesOS/releases/download/v1-15.04.2021/PiElectricsEaglesOS_15_04_2021.html",
+      "status": "usage",
+      "rating": "4/10",
+      "date": "15/04/2021",
+      "timestamp": "23:19"
+   },
+   
    {
       "id": "ec5093",
       "link": "https://github.com/Electrics-Eagles/PiElectricsEaglesOS/releases/download/v1-12.04.2021/PiElectricsEaglesOS_12_04_2021.img",
