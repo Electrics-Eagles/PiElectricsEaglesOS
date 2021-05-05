@@ -1,12 +1,9 @@
-
-# Alex Zaslavskis 2021 for PiElectricsEagles 
+# Electrics-Eagles team 2021 for PiElectricsEagles 
 #
 #
 #
-# Tool that clone install deps and perpare the buildroot 2020 11 for PiElectricsEaglesOS build
+# Under MIT Licence 
 #
-
-#/bin/sh
 
 wget https://raw.githubusercontent.com/Electrics-Eagles/PiElectricsEaglesOS/master/init_script/init.sh -O loading.sh 
 wget https://raw.githubusercontent.com/Electrics-Eagles/PiElectricsEaglesOS/master/perpare_takeoff/init.sh -O loading_drone.sh

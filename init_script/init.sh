@@ -1,9 +1,8 @@
-
 # Electrics-Eagles team 2021 for PiElectricsEagles 
 #
 #
 #
-# Tool that clone install deps and perpare the buildroot 2020 11 for PiElectricsEaglesOS build
+# Under MIT Licence 
 #
 
 #/bin/sh

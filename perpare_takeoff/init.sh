@@ -2,7 +2,7 @@
 #
 #
 #
-# Under MIt Licence 
+# Under MIT Licence 
 #
 # Written 06/04/2021
 

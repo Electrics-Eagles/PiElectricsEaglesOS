@@ -1,3 +1,9 @@
+# Electrics-Eagles team 2021 for PiElectricsEagles 
+#
+#
+#
+# Under MIT Licence 
+#
 
 rm -rf S99app
 #echo Patcher V1.0 Beta 
