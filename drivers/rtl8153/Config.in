@@ -1,7 +1,0 @@
-config BR2_PACKAGE_RTL8153
-    bool "RTL8153"
-    depends on BR2_LINUX_KERNEL
-    help
-      It is RTL8153 Linksys driver
-      https://github.com/rickhofstede/linksys_usb3gigv1_linux
-    

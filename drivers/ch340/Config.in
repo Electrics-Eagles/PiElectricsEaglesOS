@@ -1,7 +1,0 @@
-config BR2_PACKAGE_CH340
-    bool "cH340"
-    depends on BR2_LINUX_KERNEL
-    help
-      It is CH340 driver
-      https://github.com/juliagoda/CH341SER
-    
