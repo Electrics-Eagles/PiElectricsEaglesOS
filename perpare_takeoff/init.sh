@@ -2,10 +2,12 @@
 #
 #
 #
-# Tool that clone install deps and perpare the buildroot 2020 11 for PiElectricsEaglesOS build
+# Under MIt Licence 
 #
+# Written 06/04/2021
 
 #/bin/sh
+#Tool that clone install deps and perpare the buildroot for PiElectricsEaglesOS build
 
 sudo chmod -R 777 /dev/ttyAMA0
 sudo chmod -R 777 /usr/bin/pielectricseagles # bugix 14.04.2021
