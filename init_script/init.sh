@@ -15,7 +15,8 @@ echo Loading crucal modules
 modprobe i2c-bcm2835
 modprobe i2c-dev
 modprobe ch341 # additional drivers support added 13.04.2021
-modprobe r8152 # additional drivers support added 13.04.2021
+# modprobe r8152 # additional drivers support added 13.04.2021 (deprecated from 30/06/2021)
+modprobe cp210x # additional drivers for cp210x :)
 
 
 
