@@ -17,6 +17,8 @@ modprobe i2c-dev
 modprobe ch341 # additional drivers support added 13.04.2021
 # modprobe r8152 # additional drivers support added 13.04.2021 (deprecated from 30/06/2021)
 modprobe cp210x # additional drivers for cp210x :) added 30/06/2021
+modprobe i2c-gpio # additional drivers for i2c-gpio :) added 02/07/2021
+
 
 
 
