@@ -24,11 +24,11 @@ else
 fi
 
 
-FILE=/var/pielectricseagles/pielectricseagles.log
+FILE=/var/pi_drone.log
 if test -f "$FILE"; then
     echo 'log file detected' > /dev/kmsg
     echo 'log file detected'
-    sudo mv /var/pielectricseagles/pielectricseagles.log backup.log
+    sudo mv /var/pi_drone.log backup.log
     echo 'log moved to backup.log'
 
 else
@@ -37,4 +37,4 @@ else
 	   echo > /var/pielectricseagles/pielectricseagles.log
 fi
 
-pielectricseagles &
+sudo pielectricseagles &
