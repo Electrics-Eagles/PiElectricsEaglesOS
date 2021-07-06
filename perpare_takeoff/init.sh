@@ -10,7 +10,7 @@
 #Tool that clone install deps and perpare the buildroot for PiElectricsEaglesOS build
 
 sudo chmod -R 777 /dev/ttyAMA0
-sudo chmod -R 777 /usr/bin/pielectricseagles # bugix 14.04.2021
+sudo chmod -R 777 /usr/bin/pielectricseagles # bugfix 14.04.2021
 
 FILE=/etc/pielectricseagles/config.ini
 if test -f "$FILE"; then
@@ -24,17 +24,16 @@ else
 fi
 
 
-FILE=/var/pi_drone.log
+FILE=/var/pi_drone.log # bugfix 06.07.2021
 if test -f "$FILE"; then
     echo 'log file detected' > /dev/kmsg
     echo 'log file detected'
-    sudo mv /var/pi_drone.log backup.log
+    sudo mv /var/pi_drone.log backup.log # bugfix 06.07.2021
     echo 'log moved to backup.log'
 
 else
 	   echo 'Warring (code : NLFD) (create config file please)' > /dev/kmsg
-	   echo 'Warring (code : NLFD) (create config file please)'
-	   echo > /var/pielectricseagles/pielectricseagles.log
+	   echo 'Warring (code : NLFD) (create config file please)' # bugfix 06.07.2021
 fi
 
-sudo pielectricseagles &
+sudo pielectricseagles & # bugfix 06.07.2021
