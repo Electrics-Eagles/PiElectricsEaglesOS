@@ -53,4 +53,23 @@ echo
 echo 
 echo Welcome to PiElectricsEaglesOS V1.0 Alpha
 
-loading_drone.sh 
+sudo chmod  755 /dev/ttyAMA0
+sudo chmod  755 /usr/bin/pielectricseagles # bugfix 14.04.2021
+
+FILE=/etc/pielectricseagles/config.ini
+if test -f "$FILE"; then
+    echo 'config detected' > /dev/kmsg
+    echo 'config detected' 
+else
+     echo 'Fatal error (code : NCFD) (create config file please)' > /dev/kmsg
+     echo 'Fatal error (code : NCFD) (create config file please)'
+     exit  
+
+fi
+
+
+echo 'Warring (code : NLFD) (create config file please)' > /dev/kmsg
+echo 'Warring (code : NLFD) (create config file please)' # bugfix 06.07.2021
+exit 0  # bugfix 22.09.2021
+
+sudo pielectricseagles & # bugfix 06.07.2021
