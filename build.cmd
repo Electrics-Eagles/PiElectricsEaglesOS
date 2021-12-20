@@ -1,1 +1,2 @@
-docker build C:\Users\payan\Documents\GitHub\PiElectricsEaglesOS
+cd C:\Users\payan\Documents\GitHub\PiElectricsEaglesOS
+docker build . -t img.img
