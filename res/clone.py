@@ -1,20 +1,21 @@
 import json 
-import requests
 import datetime
 import requests
 import zipfile
-r = requests.get('https://api.github.com/repos/Electrics-Eagles/PiElectricsEagles-dev/actions/artifacts')
+import urllib.request
+
+
+response = urllib.request.urlopen('https://api.github.com/repos/Electrics-Eagles/PiElectricsEagles-dev/actions/artifacts')
+html = response.read()
 print("**** PIELECTRICSEAGLES BUILDROOT PLUGIN *****")
 date=datetime.datetime.now()
 print(f"**** at: {date} Clone json *****")
-artifact_json=json.loads(r.text)
+artifact_json=json.loads(html)
 print(f"**** at: {date} json loaded  *****")
 artifact_id=artifact_json['artifacts'][0]['id']
 url = f"https://nightly.link/Electrics-Eagles/PiElectricsEagles-dev/actions/artifacts/{artifact_id}.zip"
-response = requests.get(url, stream=True)
-with open("bin.zip", "wb") as handle:
-    for data in (response.iter_content()):
-        handle.write(data)
+
+urllib.request.urlretrieve(url, 'bin.zip')
 zip = zipfile.ZipFile('bin.zip')
 zip.extractall()
 print(f"**** at: {date} Cloned ok ****")
