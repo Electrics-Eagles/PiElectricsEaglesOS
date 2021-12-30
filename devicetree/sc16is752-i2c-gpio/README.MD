@@ -19,10 +19,16 @@ dtoverlay=sc16is752-i2c-gpio,int_pin=24
 sudo reboot
 ### 8. After rebooting Raspberry Pi Zero, your need to run command sudo modprobe and test that sc16is752 is worked following below
 sudo modprobe i2c-dev
+
 sudo modprobe i2c-bcm2835
+
 sudo modprobe sc16is7xx
+
 dmesg | grep i2c
+
 dmesg | grep tty
+
 ls /dev | grep tty
+
 ### 9. Enjoy!!! :)
 
