@@ -2,7 +2,7 @@ SC16is752 UART Brigde from i2c, support i2c_gpio alias in Raspberry Pi Zero devi
 This DT code is base Theoi-Meteoroi/GPIO-pca9548 repository, but I edited some section DT code to support SC16IS752 driver over i2c-gpio alias. 
 
 Instruction to install DT device.
-1. Run in Raspberry Pi OS operation system.
+### 1. Run in Raspberry Pi OS operation system.
 ### 2. Firstly step, you need to clone PiElectricsEaglesOS via git command. Run command folowing command
 git clone https://github.com/Electrics-Eagles/PiElectricsEaglesOS.git
 ### 3. Go to directory follwing command. 
