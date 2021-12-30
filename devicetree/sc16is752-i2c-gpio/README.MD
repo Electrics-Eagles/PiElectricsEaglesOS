@@ -13,6 +13,7 @@ sudo chmod 777 dts_install.sh
 ./dts_install.sh
 ### 6. Edit config.txt in directory /boot, add text following below text
 dtoverlay=i2c-gpio,i2c_gpio_sda=19,i2c_gpio_scl=16
+
 dtoverlay=sc16is752-i2c-gpio,int_pin=24
 ### 7. Reboot your Raspberry Pi Zero
 sudo reboot
