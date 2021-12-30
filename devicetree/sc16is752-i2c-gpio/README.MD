@@ -1,5 +1,5 @@
-SC16is752 UART Brigde from i2c, support i2c_gpio alias in Raspberry Pi Zero device tree, but original DT code support only i2c_arm alias. 
-This DT code is base  Theoi-Meteoroi/GPIO-pca9548 repository, but I edited some section DT code to support SC16IS752 driver over i2c-gpio alias. 
+SC16is752 UART Brigde from i2c, support i2c_gpio alias in Raspberry Pi Zero device tree, but original DT code was supported only i2c_arm alias, which we can't connect another i2c master port expect i2c-1 port. 
+This DT code is base Theoi-Meteoroi/GPIO-pca9548 repository, but I edited some section DT code to support SC16IS752 driver over i2c-gpio alias. 
 
 Instruction to install DT device.
 1. Run in Raspberry Pi OS operation system.
