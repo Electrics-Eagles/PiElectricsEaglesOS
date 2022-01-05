@@ -16,5 +16,5 @@ docker build --output type=tar,dest=file.tar .
 or better use ready to go script : build.sh
 just 
 ```
-wget https://raw.githubusercontent.com/Electrics-Eagles/PiElectricsEaglesOS/master/build.sh | bash
+wget https://raw.githubusercontent.com/Electrics-Eagles/PiElectricsEaglesOS/master/build.sh && sudo chmod 755 build.sh && ./build.sh
 ```
