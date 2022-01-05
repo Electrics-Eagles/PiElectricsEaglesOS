@@ -14,3 +14,7 @@ finnaly build with docker assume that you care in source code directory:
 docker build --output type=tar,dest=file.tar .
 ```
 or better use ready to go script : build.sh
+just 
+```
+wget https://raw.githubusercontent.com/Electrics-Eagles/PiElectricsEaglesOS/master/build.sh | bash
+```
