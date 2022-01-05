@@ -32,7 +32,7 @@ chmod 777   ${TARGET_DIR}/usr/bin/version.sh
 rm -rf version.sh
 echo Config install 
 wget https://raw.githubusercontent.com/Electrics-Eagles/PiElectricsEagles-dev/master/src/config/config.ini
-mkdir   ${TARGET_DIR}/etc/pielectricseagles
+#mkdir   ${TARGET_DIR}/etc/pielectricseagles
 mv config.ini ${TARGET_DIR}/etc/pielectricseagles/config.ini
 chmod 777   ${TARGET_DIR}/etc/pielectricseagles/config.ini
 
