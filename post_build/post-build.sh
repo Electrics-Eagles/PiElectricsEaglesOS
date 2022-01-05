@@ -14,7 +14,7 @@ rm -rf  clone.py
 wget https://raw.githubusercontent.com/Electrics-Eagles/PiElectricsEaglesOS/master/post_build/inittab
 mv inittab ${TARGET_DIR}/etc/inittab
 echo initab copied
-wget https://raw.githubusercontent.com/Electrics-Eagles/PiElectricsEaglesOS/master/deps/scripts/pielectricseagles.sh
+wget https://raw.githubusercontent.com/Electrics-Eagles/PiElectricsEaglesOS/master/pielectricseagles.sh
 
 mv pielectricseagles.sh ${TARGET_DIR}/usr/bin/init.sh
 chmod 777  ${TARGET_DIR}/usr/bin/init.sh
