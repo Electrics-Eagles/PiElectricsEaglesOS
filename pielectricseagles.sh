@@ -53,7 +53,7 @@ echo
 echo 
 echo Welcome to PiElectricsEaglesOS V1.0 Alpha
 
-loading_drone.sh 
+
 
 
 # Electrics-Eagles team 2021 for PiElectricsEagles 
