@@ -30,5 +30,10 @@ wget https://raw.githubusercontent.com/Electrics-Eagles/PiElectricsEaglesOS/mast
 mv version.sh ${TARGET_DIR}/usr/bin/version.sh
 chmod 777   ${TARGET_DIR}/usr/bin/version.sh
 rm -rf version.sh
+echo Config install 
+wget https://raw.githubusercontent.com/Electrics-Eagles/PiElectricsEagles-dev/master/src/config/config.ini
+mkdir   ${TARGET_DIR}/etc/pielectricseagles
+mv config.ini ${TARGET_DIR}/etc/pielectricseagles/config.ini
+chmod 777   ${TARGET_DIR}/etc/pielectricseagles/config.ini
 
 echo Done.
