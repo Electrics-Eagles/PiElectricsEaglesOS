@@ -10,8 +10,8 @@ GENIMAGE_TMP="${BUILD_DIR}/genimage.tmp"
 
 CONFIG_TXT=./output/images/rpi-firmware/config.txt
 FAT_PARTITION=./output/images/rpi-firmware
-OVERLAYS_PARTION=./output/images/rpi-firmware/overlays
-sc16is752_PARTION=./output/images/rpi-firmware/overlays/sc16is752-i2c-gpio.dtbo
+OVERLAYS_PARTION=./output/images/rpi-firmware
+sc16is752_PARTION=./output/images/rpi-firmware/sc16is752-i2c-gpio.dtbo
 
 # add config
 cat > $CONFIG_TXT<< EOF
