@@ -11,5 +11,5 @@ Grab lot of coffee , films whatever you like ... build can take up one hour
 
 finnaly build with docker assume that you care in source code directory:
 ```
-docker build . 
+docker build --output type=tar,dest=file.tar .
 ```
