@@ -42,11 +42,19 @@ gpu_mem_256=100
 gpu_mem_512=100
 gpu_mem_1024=100
 
-
-dtparam=i2c_arm=on
-dtoverlay=i2c-gpio,bus=2,i2c_gpio_sda=19,i2c_gpio_scl=16
+dtparam=i2c=on,i2s=off,spi=off
 dtoverlay=i2c-gpio,bus=3,i2c_gpio_sda=22,i2c_gpio_scl=23
 dtoverlay=i2c-gpio,bus=4,i2c_gpio_sda=26,i2c_gpio_scl=20
+dtoverlay=i2c-gpio,i2c_gpio_sda=19,i2c_gpio_scl=16
+dtoverlay=sc16is752-i2c-gpio,int_pin=24
+
+gpio=17=op,dl,pd
+gpio=8=op,dl,pd
+gpio=7=op,dl,pd
+gpio=27=op,dl,pd
+gpio=18=op,dl,pd
+gpio=21=op,dl,pd
+
 
 EOF
 
