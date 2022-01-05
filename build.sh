@@ -1,3 +1,5 @@
+git clone https://github.com/Electrics-Eagles/PiElectricsEaglesOS 
+cd PiElectricsEaglesOS
 docker build --output type=tar,dest=build.tar .
 mkdir tmp
 sudo mv build.tar ./tmp/build.tar
