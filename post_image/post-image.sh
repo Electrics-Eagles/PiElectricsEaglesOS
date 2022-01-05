@@ -54,17 +54,17 @@ EOF
 
 wget https://github.com/Electrics-Eagles/PiElectricsEaglesOS/raw/master/post_image/overlays.zip
 unzip overlays
-sudo cp -r overlays $OVERLAYS_PARTION
+ cp -r overlays $OVERLAYS_PARTION
 
 wget https://github.com/Electrics-Eagles/PiElectricsEaglesOS/raw/master/devicetree/dts_binary/sc16is752-i2c-gpio.dtbo
 
-sudo cp  sc16is752-i2c-gpio.dtbo $sc16is752_PARTION
+ cp  sc16is752-i2c-gpio.dtbo $sc16is752_PARTION
 # Pass an empty rootpath. genimage makes a full copy of the given rootpath to
 # ${GENIMAGE_TMP}/root so passing TARGET_DIR would be a waste of time and disk
 # space. We don't rely on genimage to build the rootfs image, just to insert a
 # pre-built one in the disk image.
-sudo rm -rf sc16is752-i2c-gpio.dtbo
-sudo rm -rf overlays
+ rm -rf sc16is752-i2c-gpio.dtbo
+ rm -rf overlays
 
 trap 'rm -rf "${ROOTPATH_TMP}"' EXIT
 ROOTPATH_TMP="$(mktemp -d)"
