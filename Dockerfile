@@ -54,7 +54,7 @@ RUN locale-gen en_US.utf8
 
 RUN ["/bin/bash"]
 
-ADD https://buildroot.org/downloads/buildroot-2021.11.tar.gz /root/buildroot.tar.gz
+ADD https://github.com/Electrics-Eagles/PiElectricsEaglesOS/raw/master/buildroot-2021.11.tar.gz /root/buildroot.tar.gz
 WORKDIR "/root"
 RUN tar -xzvf /root/buildroot.tar.gz
 RUN cd /root && ls 
