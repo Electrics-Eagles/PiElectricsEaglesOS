@@ -38,6 +38,7 @@ RUN apt-get update && \
     flex \
     libssl-dev \
     libfdt-dev
+    pkg-config 
 
 # Sometimes Buildroot need proper locale, e.g. when using a toolchain
 # based on glibc.
