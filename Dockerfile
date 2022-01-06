@@ -65,7 +65,7 @@ RUN chmod 777 ./board/raspberrypi/post-build.sh
 ADD https://raw.githubusercontent.com/Electrics-Eagles/PiElectricsEaglesOS/master/post_image/post-image.sh ./board/raspberrypi/post-image.sh
 RUN chmod 777 ./board/raspberrypi/post-image.sh
 ADD https://raw.githubusercontent.com/Electrics-Eagles/PiElectricsEaglesOS/master/post_image/genimage-raspberrypi0.cfg ./board/raspberrypi/genimage-raspberrypi0.cfg
-ADD https://raw.githubusercontent.com/Electrics-Eagles/PiElectricsEaglesOS/master/.config .config
-RUN gcc --version
+
 RUN make raspberrypi0_defconfig
+ADD https://raw.githubusercontent.com/Electrics-Eagles/PiElectricsEaglesOS/master/.config .config
 RUN make all >> log.txt
