@@ -24,7 +24,7 @@ clear
 echo Loading init script..........
 echo Loading init script..........100%
 echo Warring OS is in Real Time mode
-echo PiElectricsEaglesOS v1.0 06042021 Alpha
+echo PiElectricsEaglesOS v1.0 06012022 Alpha
 clear
 
 
@@ -53,19 +53,6 @@ echo
 echo 
 echo Welcome to PiElectricsEaglesOS V1.0 Alpha
 
-
-
-
-# Electrics-Eagles team 2021 for PiElectricsEagles 
-#
-#
-#
-# Under MIT Licence 
-#
-# Written 06/04/2021
-
-#/bin/sh
-#Tool that clone install deps and perpare the buildroot for PiElectricsEaglesOS build
 
 sudo chmod -R 777 /dev/ttyAMA0
 sudo chmod -R 777 /usr/bin/pielectricseagles # bugfix 14.04.2021
