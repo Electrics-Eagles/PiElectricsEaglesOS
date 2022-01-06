@@ -18,7 +18,7 @@ modprobe ch341 # additional drivers support added 13.04.2021
 # modprobe r8152 # additional drivers support added 13.04.2021 (deprecated from 30/06/2021)
 modprobe cp210x # additional drivers for cp210x :) added 30/06/2021
 modprobe i2c-gpio # additional drivers for cp210x :) added 02/07/2021
-
+modprobe sc16is7xx # additional drivers for sc16is7xx :) added 05/01/2021
 
 clear
 echo Loading init script..........
@@ -52,7 +52,6 @@ printf "
 echo 
 echo 
 echo Welcome to PiElectricsEaglesOS V1.0 Alpha
-
 
 sudo chmod -R 777 /dev/ttyAMA0
 sudo chmod -R 777 /usr/bin/pielectricseagles # bugfix 14.04.2021
