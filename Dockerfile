@@ -39,7 +39,10 @@ RUN apt-get update && \
     libssl-dev \
     libfdt-dev
     pkg-config 
-
+    
+    
+RUN  apt install linux-headers-$(uname -r) libssl-dev  libssl1.0 -y 
+RUN export PKG_CONFIG_PATH=/usr/lib/x86_64-linux-gnu/pkgconfig
 # Sometimes Buildroot need proper locale, e.g. when using a toolchain
 # based on glibc.
 RUN locale-gen en_US.utf8
