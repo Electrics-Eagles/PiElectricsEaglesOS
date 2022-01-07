@@ -38,11 +38,14 @@ RUN apt-get update && \
     flex \
     libssl-dev \
     libfdt-dev
-    pkg-config 
+    pkg-config \
+    
     
     
 RUN  apt install linux-headers-$(uname -r) libssl-dev -y
 RUN  apt install libssl1.0-dev -y 
+RUN apt install libcrypto++6 libcurl4-openssl-dev -y
+RUN 
 RUN export PKG_CONFIG_PATH=/usr/lib/x86_64-linux-gnu/pkgconfig
 # Sometimes Buildroot need proper locale, e.g. when using a toolchain
 # based on glibc.
