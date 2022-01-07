@@ -11,7 +11,7 @@ GENIMAGE_TMP="${BUILD_DIR}/genimage.tmp"
 CONFIG_TXT=./output/images/rpi-firmware/config.txt
 FAT_PARTITION=./output/images/rpi-firmware
 OVERLAYS_PARTION=./output/images/rpi-firmware
-sc16is752_PARTION=./output/images/rpi-firmware/sc16is752-i2c-gpio.dtbo
+sc16is752_PARTION=./output/images/rpi-firmware/overlays/sc16is752-i2c-gpio.dtbo
 
 # add config
 cat > $CONFIG_TXT<< EOF
@@ -64,9 +64,9 @@ wget https://github.com/Electrics-Eagles/PiElectricsEaglesOS/raw/master/post_ima
 unzip overlays
  cp -r overlays $OVERLAYS_PARTION
 
-wget https://github.com/Electrics-Eagles/PiElectricsEaglesOS/raw/master/devicetree/dts_binary/sc16is752-i2c-gpio.dtbo
+curl  https://github.com/Electrics-Eagles/PiElectricsEaglesOS/raw/master/devicetree/dts_binary/sc16is752-i2c-gpio.dtbo -o  $sc16is752_PARTION
 
- cp  sc16is752-i2c-gpio.dtbo $sc16is752_PARTION
+
 # Pass an empty rootpath. genimage makes a full copy of the given rootpath to
 # ${GENIMAGE_TMP}/root so passing TARGET_DIR would be a waste of time and disk
 # space. We don't rely on genimage to build the rootfs image, just to insert a
