@@ -1,4 +1,16 @@
+set -e 
 
+BOARD_DIR="$(dirname $0)"
+BOARD_NAME="$(basename ${BOARD_DIR})"
+GENIMAGE_CFG="${BOARD_DIR}/genimage-${BOARD_NAME}.cfg"
+GENIMAGE_TMP="${BUILD_DIR}/genimage.tmp"
+
+
+CONFIG_TXT=./output/images/rpi-firmware/config.txt
+FAT_PARTITION=./output/images/rpi-firmware
+OVERLAYS_PARTION=./output/images/rpi-firmware
+sc16is752_PARTION=./output/images/rpi-firmware/overlays/sc16is752-i2c-gpio.dtbo
+boot_bin=./output/images/rpi-firmware/bootcode.bin
 # add config
 cat > $CONFIG_TXT<< EOF
 # Please note that this is only a sample, we recommend you to change it to fit
