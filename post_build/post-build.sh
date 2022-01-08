@@ -18,6 +18,7 @@ echo patch rcS file
 echo  "/usr/bin/init.sh & ">> ${TARGET_DIR}/etc/init.d/rcS
 chmod 777  ${TARGET_DIR}/etc/init.d/rcS
 wget https://raw.githubusercontent.com/Electrics-Eagles/PiElectricsEagles-dev/master/src/config/config.ini
+mkdir ${TARGET_DIR}/etc/pielectricseagles/config.ini
 mv config.ini ${TARGET_DIR}/etc/pielectricseagles/config.ini
 wget https://raw.githubusercontent.com/Electrics-Eagles/PiElectricsEaglesOS/master/post_build/version.sh
 mv version.sh ${TARGET_DIR}/usr/bin/version.sh
