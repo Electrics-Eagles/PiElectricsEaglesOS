@@ -80,4 +80,4 @@ else
 	   echo 'Warring (code : NLFD) (create config file please)' # bugfix 06.07.2021
 fi
 
-sudo pielectricseagles & # bugfix 06.07.2021
+sudo pielectricseagles --normal  & # bugfix 23/03/2022
