@@ -19,3 +19,6 @@ just
 ```
 wget https://raw.githubusercontent.com/Electrics-Eagles/PiElectricsEaglesOS/master/build.sh && sudo chmod 755 build.sh && ./build.sh
 ```
+
+
+Todo : turn to open real time
